@@ -4,4 +4,5 @@ def oxford_comma(array)
   else
   end_of_phrase = array.pop
   array.join(", ") << " and #{end_of_phrase}"
+  end
 end
