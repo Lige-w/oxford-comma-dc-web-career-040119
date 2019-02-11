@@ -1,12 +1,7 @@
 def oxford_comma(array)
-  case array.length
-  when 1
-    array.join
-  when 2
+  if array.length <= 2
     array.join(" and ")
-  when 3
-    end_of_phrase = array.pop
-    phrase = array.join(", ")
-    phrase << ", and #{end_of_phrase}"
-
+  else
+  end_of_phrase = array.pop
+  array.join(", ") << " and #{end_of_phrase}"
 end
